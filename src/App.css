@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+#integrated-terminal {
+  position: relative;
+  z-index: 1;
+}
+
+/* Adjust this selector based on how you can target the Wormhole Bridge */
+div.WormholeBridge {
+  position: relative;
+  z-index: 2;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.widgets-container {
+  display: flex;
+  justify-content: space-around; /* This will space out the child elements equally */
+  align-items: center; /* This will center the items vertically */
+  width: 100%;
+  margin: 0 auto;
+  background-image: url('./declaration.png'); /* Adjust the path as necessary */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.widget-wrapper {
+  flex: 1; /* Allows the widget wrappers to grow and fill the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px; /* Adds some space between the widgets */
+  height: 100%; /* Ensures that the widget wrapper fills the height of its container */
+}
+
+/* You might need to adjust the height explicitly if "100%" does not work as expected */
+.jupiter-widget, .dextools-widget {
+  width: 100%; /* Ensures the widgets fill their wrappers */
+  height: auto; /* Adjust based on the widget's content or set a fixed height */
+}
+
+/* Updated Container for the Rango widget with "rango" prefix */
+.rango-widget-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./alexbridgeReady.jpg'); /* Update this path */
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px; /* Adjust as needed */
+  padding: 20px; /* Adjust as needed */
+}
+
+/* Apply the .elementor-heading-title styles to your existing title class or create a new one */
+.custom-heading {
+  color: azure; /* Update this variable or replace it with a specific color code */
+  font-family: "Kanit", Sans-serif;
+  font-size: 65px; /* Adjust if needed */
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.889em;
+  letter-spacing: 1px;
+  text-shadow: 3px 3px 0px rgba(155, 155, 155, 0.3);
+  margin: 0 auto; /* Center the heading */
+}
+
+/* Create a new class for the subheading with adjusted styles */
+.custom-subheading {
+  color: azure; /* Update this variable or replace it with a specific color code */
+  font-family: "Kanit", Sans-serif;
+  font-size: 28px; /* Smaller font size */
+  font-weight: 700; /* Slightly lighter weight */
+  text-transform: uppercase;
+  line-height: 1em;
+  letter-spacing: 0.8px;
+  text-shadow: 2px 2px 0px rgba(155, 155, 155, 0.3);
+  margin: 20px auto; /* Adjust spacing as needed */
+}
+
+.custom-textLabel {
+
+}
+
+/* Update your rango widget wrapper styles for proper alignment */
+.rango-widget-background .rango-widget-wrapper {
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  align-items: center; /* Center align the children */
+  justify-content: center; /* Center vertically */
+  width: 100%;
+  max-width: 600px; /* Adjust to the max width you want for the widget and text */
+}
+
+
+
+
